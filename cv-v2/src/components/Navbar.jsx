@@ -1,0 +1,19 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav className="navbar bg-gray-800 text-white p-4 mb-10">
+      <ul className="flex space-x-4">
+        <li>
+          <Link to="/" className="hover:underline">Home</Link>
+        </li>
+        <li>
+          <Link to="/about" className="hover:underline">About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
